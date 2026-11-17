@@ -1,0 +1,13 @@
+timestamp,Type,Requirement,Change,Urgency,Origin,N_dependencies,Cost,Time,predicted_priority,human_priority,is_override,entropy,alpha_weight
+2026-11-16T16:28:58.322282,Non functional,"As a backend developer, I want Redis distributed caching integrated for read-heavy product catalog endpoints, so that database CPU load decreases by 40% during peak traffic hours.
+
+
+",Addition,Soon,Developer knowledge,2,3,4,high,high,0,1.0557,5.0
+2026-11-16T16:29:24.027919,Non functional,"As a backend developer, I want Redis distributed caching integrated for read-heavy product catalog endpoints, so that database CPU load decreases by 40% during peak traffic hours.
+
+
+",Addition,Soon,Developer knowledge,2,3,4,high,low,1,1.0557,5.0
+2026-11-16T16:29:35.951150,Non functional,"As a backend developer, I want Redis distributed caching integrated for read-heavy product catalog endpoints, so that database CPU load decreases by 40% during peak traffic hours.
+
+
+",Addition,Soon,Developer knowledge,2,3,4,high,low,1,1.0557,5.0

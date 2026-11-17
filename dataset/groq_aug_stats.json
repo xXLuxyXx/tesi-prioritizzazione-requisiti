@@ -1,0 +1,10 @@
+{
+  "n_trans_in": 100,
+  "n_gen_in": 90,
+  "tau_sim": 0.48,
+  "tau_dup": 0.9,
+  "scarti_sim_pct": 5.0,
+  "scarti_dup_pct": 0.0,
+  "n_acc_llm": 39,
+  "acc_netto_pct": 97.5
+}

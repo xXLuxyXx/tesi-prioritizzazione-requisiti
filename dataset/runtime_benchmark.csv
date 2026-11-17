@@ -1,0 +1,101 @@
+Type,Requirement,Change,Urgency,Origin,N_dependencies,Cost,Time,Priority
+nfr,"As a security architect, I want all REST API endpoints to validate signed JWT access tokens via OAuth2 within 15 ms, so that unauthorized consumers are blocked before accessing tenant data.",addition,soon,organization,1,2,2,high
+nfr,"As a DevOps engineer, I want automated failover across multi-AZ Kubernetes clusters with RTO under 30 seconds, so that critical payment microservices remain available during node outages.",addition,soon,organization,1,2,2,high
+fr,"As a compliance officer, I want personal identifiable information (PII) to be encrypted at rest using AES-256 and purged upon GDPR erasure requests, so that the platform avoids regulatory penalties.",modification,soon,market,1,2,2,high
+nfr,"As a platform engineer, I want distributed rate limiting and circuit breakers configured on the API Gateway, so that cascading failures and DDoS bursts do not degrade core checkout services.",addition,soon,organization,0,2,2,high
+fr,"As an enterprise administrator, I want mandatory SAML 2.0 Single Sign-On and role-based access control (RBAC) enforcement across microservices, so that privilege escalation vulnerabilities are prevented.",addition,soon,organization,1,2,2,high
+nfr,"As a database reliability engineer, I want distributed ACID transaction consistency using the Saga pattern with idempotency keys, so that duplicate payment charges never occur during network retries.",addition,soon,organization,3,4,5,high
+nfr,"As a security engineer, I want all container images scanned in the CI/CD pipeline and critical CVE vulnerabilities to block production deployment, so that compromised dependencies never reach runtime.",modification,soon,organization,1,2,2,high
+fr,"As a healthcare practitioner, I want immutable audit logs capturing every read and write operation on patient records with cryptographic hashing, so that forensic traceability is guaranteed.",modification,soon,organization,1,2,2,high
+nfr,"As a site reliability engineer, I want p99 latency for the real-time fraud scoring microservice to remain below 80 ms under 5000 requests/s, so that checkout throughput is not bottlenecked.",addition,soon,project vision,0,2,2,high
+fr,"As a mobile banking user, I want biometric MFA challenge verification before executing wire transfers exceeding threshold limits, so that account takeover attacks are neutralized.",addition,soon,organization,1,2,2,high
+nfr,"As a cloud architect, I want mutual TLS (mTLS) enforced across all service-to-service traffic inside the service mesh, so that lateral movement inside the cluster is prevented.",addition,soon,organization,2,3,4,high
+fr,"As a payment gateway integrator, I want HMAC-SHA256 signature verification on all incoming webhook payloads, so that spoofed transaction confirmation events are rejected immediately.",addition,later,organization,0,5,10,high
+nfr,"As an operations lead, I want automated point-in-time database backups replicated cross-region every 5 minutes with zero data loss (RPO=0), so that catastrophic corruption can be recovered.",addition,soon,market,1,2,2,high
+fr,"As a security operations analyst, I want automatic session token revocation across all active devices immediately upon password reset or suspicious login detection, so that hijacked sessions terminate.",addition,later,organization,0,5,10,high
+nfr,"As a backend architect, I want strict schema validation and parameterized query enforcement on GraphQL resolvers, so that injection and query-depth DoS attacks are eliminated.",addition,soon,organization,3,4,5,high
+fr,"As a fintech compliance auditor, I want real-time AML transaction screening integrated into the settlement pipeline before funds are released, so that sanctioned entities are blocked.",addition,soon,market,1,2,2,high
+nfr,"As a platform SRE, I want OpenTelemetry distributed tracing and automated PagerDuty alerting on error budget burn rates above 2%, so that production incidents are mitigated before SLA breach.",modification,soon,organization,0,2,2,high
+fr,"As an API consumer, I want short-lived refresh token rotation with automatic reuse detection, so that stolen OAuth2 credentials cannot be replayed by attackers.",addition,soon,organization,0,2,2,high
+nfr,"As a systems engineer, I want zero-downtime blue-green database migrations with backward-compatible schemas, so that continuous deployment never interrupts live customer traffic.",addition,soon,organization,1,2,2,high
+fr,"As a tenant administrator, I want strict row-level tenant isolation enforced at the database connection pool layer, so that cross-tenant data leakage is mathematically impossible.",addition,later,organization,5,8,14,high
+fr,"As a product manager, I want an interactive analytics dashboard displaying sprint velocity and cycle time metrics, so that team capacity can be forecasted more accurately.",modification,soon,organization,1,2,2,medium
+nfr,"As a backend developer, I want Redis distributed caching added for read-heavy catalog endpoints, so that database CPU utilization decreases by 40% during peak hours.",modification,soon,organization,1,2,2,medium
+fr,"As an end user, I want real-time push notifications via WebSockets when my support ticket status changes, so that I do not need to manually refresh the portal.",modification,soon,organization,0,2,2,medium
+fr,"As a customer support agent, I want full-text search with faceted filtering across historical order records, so that customer inquiries are resolved faster.",modification,soon,organization,2,2,2,medium
+nfr,"As a QA automation engineer, I want ephemeral preview environments spun up automatically for every pull request in GitHub Actions, so that integration tests run before merge.",modification,soon,project vision,2,2,2,medium
+fr,"As a workspace owner, I want to export monthly billing invoices and usage telemetry in CSV and PDF formats, so that our accounting team can reconcile cloud expenses.",modification,soon,organization,1,2,2,medium
+fr,"As a mobile app user, I want offline-first local synchronization for draft notes with conflict resolution upon reconnection, so that I can work during flights.",modification,soon,market,3,3,4,medium
+nfr,"As a frontend architect, I want code splitting and lazy loading configured for the React micro-frontends, so that initial bundle size stays below 250 KB.",modification,soon,organization,3,3,4,medium
+fr,"As a team lead, I want Slack and Microsoft Teams webhook integrations for deployment status notifications, so that developers stay informed of release pipelines.",modification,later,organization,0,4,8,medium
+fr,"As a registered customer, I want to manage multiple shipping addresses and set a default payment card in my profile settings, so that repeat checkouts take fewer steps.",modification,later,market,1,5,10,medium
+nfr,"As a DevOps specialist, I want structured JSON logging shipped to Elasticsearch with 30-day retention policies, so that microservice debugging across containers is streamlined.",modification,soon,organization,0,2,2,medium
+fr,"As a content editor, I want scheduled publishing workflows for marketing landing pages with preview links, so that campaigns launch automatically at midnight.",modification,soon,project vision,0,2,2,medium
+fr,"As an API partner, I want sandbox API keys and interactive Swagger/OpenAPI documentation, so that our developers can test webhook integrations safely.",modification,soon,organization,3,3,4,medium
+nfr,"As a mobile engineer, I want adaptive image compression and CDN edge caching for user-uploaded media, so that feed scrolling remains smooth on 4G networks.",modification,soon,organization,1,2,2,medium
+fr,"As a store manager, I want automated low-stock threshold alerts sent via email when inventory drops below reorder levels, so that stockouts are minimized.",modification,soon,organization,1,2,2,medium
+fr,"As a data analyst, I want nightly ETL pipelines syncing operational events into the Snowflake data warehouse, so that BI reports reflect previous-day activity.",modification,soon,project vision,0,2,2,medium
+nfr,"As a platform developer, I want feature flag toggles integrated via LaunchDarkly SDK, so that new capabilities can be rolled out gradually to 10% of users.",modification,later,organization,1,5,10,medium
+fr,"As a recruiter, I want bulk resume parsing and tag assignment when uploading candidate archives, so that applicant screening requires less manual data entry.",modification,later,organization,1,5,10,medium
+fr,"As a subscription user, I want self-service plan upgrades and prorated billing previews inside the billing portal, so that I do not need to contact sales.",modification,later,organization,0,4,8,medium
+nfr,"As an accessibility specialist, I want WCAG 2.1 AA keyboard navigation and ARIA labels across all form controls, so that screen-reader users can complete workflows.",modification,soon,organization,2,2,2,medium
+fr,"As a project coordinator, I want Gantt timeline dependencies visualized for linked backlog epics, so that milestone bottlenecks are spotted early.",modification,soon,organization,0,2,2,medium
+fr,"As a logistics operator, I want real-time carrier tracking status updates polled via REST webhooks, so that customers see accurate delivery windows.",modification,later,organization,0,4,8,medium
+nfr,"As a backend engineer, I want database connection pooling tuned with PgBouncer, so that serverless function bursts do not exhaust PostgreSQL max connections.",modification,later,organization,0,4,8,medium
+fr,"As an instructor, I want automated quiz grading with customizable rubric weights, so that students receive immediate feedback upon submission.",modification,later,organization,0,4,8,medium
+fr,"As a marketplace seller, I want promotional discount coupon codes with expiration dates and usage caps, so that I can run seasonal sales.",modification,soon,organization,0,2,2,medium
+nfr,"As a QA lead, I want contract testing with Pact integrated between consumer and provider microservices, so that breaking API schema changes are caught in CI.",modification,soon,organization,0,2,2,medium
+fr,"As a fleet dispatcher, I want geofencing alerts triggered when delivery vehicles enter or exit designated warehouse zones, so that arrival times are logged.",modification,later,organization,2,6,11,medium
+fr,"As a community moderator, I want automated spam keyword filtering and user report queues, so that abusive comments are hidden pending review.",modification,soon,organization,1,2,2,medium
+nfr,"As a cloud FinOps analyst, I want automated tagging of Kubernetes namespaces and cloud volumes by cost center, so that monthly infrastructure spend is attributable.",modification,soon,project vision,0,2,2,medium
+fr,"As a customer, I want saved search alerts emailed weekly when new listings match my filter criteria, so that I stay updated without daily visits.",modification,soon,organization,0,2,2,medium
+fr,"As a finance user, I want multi-currency exchange rate conversion updated daily from an external FX feed, so that international invoices display local totals.",modification,soon,project vision,2,2,2,medium
+nfr,"As a release engineer, I want semantic versioning and automated changelog generation triggered on git tags, so that release notes remain consistent.",modification,later,organization,1,5,10,medium
+fr,"As a clinic receptionist, I want SMS appointment reminders sent 24 hours prior to scheduled visits, so that patient no-show rates are reduced.",modification,later,organization,0,4,8,medium
+fr,"As a developer, I want GraphQL subscription support for live collaborative document cursors, so that multiple team members can co-edit specifications.",modification,soon,market,1,2,2,medium
+nfr,"As a security engineer, I want automated dependency update pull requests configured via Dependabot, so that minor library patches are applied regularly.",modification,later,project vision,0,4,8,medium
+fr,"As a user, I want a dark mode theme toggle persisted in local browser storage, so that the interface is more comfortable to read at night.",addition,soon,customer,1,2,2,low
+fr,"As a profile owner, I want to upload a custom circular avatar image or choose from preset geometric icons, so that my account feels personalized.",modification,soon,customer,1,2,2,low
+nfr,"As a UI designer, I want smooth CSS micro-animations on button hover and modal transitions, so that the web application feels polished.",modification,later,customer,0,4,8,low
+fr,"As a dashboard user, I want to rearrange widget cards via drag-and-drop and reset to default layout, so that I can customize my home screen.",modification,later,developer knowledge,4,6,11,low
+fr,"As a reader, I want an estimated reading time badge displayed at the top of documentation articles, so that I know how long a guide takes.",modification,later,customer,0,4,8,low
+fr,"As a user, I want keyboard shortcut tooltips shown when hovering over toolbar icons, so that I can learn hotkeys gradually.",modification,soon,customer,1,2,2,low
+nfr,"As a frontend developer, I want SVG icons consolidated into a single sprite sheet, so that minor asset requests are slightly cleaner.",addition,soon,customer,1,2,2,low
+fr,"As a member, I want to customize my email digest frequency between weekly and monthly summaries, so that my inbox stays tidy.",modification,soon,customer,1,2,2,low
+fr,"As a visitor, I want an interactive product tour modal on first login that can be dismissed permanently, so that new users see basic tips.",modification,soon,developer knowledge,3,3,4,low
+fr,"As a user, I want custom color accent themes for workspace sidebars, so that I can visually distinguish staging from production environments.",modification,later,customer,0,4,8,low
+fr,"As an author, I want a word and character counter displayed below markdown comment boxes, so that I can track post length.",modification,soon,developer knowledge,0,2,2,low
+nfr,"As a designer, I want custom branded empty-state illustrations shown when a search query returns zero results, so that blank screens look friendly.",modification,later,customer,0,4,8,low
+fr,"As a user, I want to bookmark favorite reports into a quick-access sidebar folder, so that I save one click when navigating.",modification,later,customer,0,4,8,low
+fr,"As a gamer, I want optional sound effects when completing daily checklist goals, so that task completion feels rewarding.",addition,soon,customer,2,3,4,low
+fr,"As a portal user, I want localized date format preferences (DD/MM/YYYY vs MM/DD/YYYY) in account settings, so that dates match my region.",modification,soon,developer knowledge,2,2,2,low
+nfr,"As a frontend maintainer, I want unused legacy CSS classes pruned from the style bundle, so that stylesheet readability improves.",modification,later,customer,0,4,8,low
+fr,"As a user, I want a 'Back to Top' floating button on long changelog pages, so that scrolling back up is convenient.",modification,soon,customer,1,2,2,low
+fr,"As a workspace member, I want to set a custom emoji status message next to my display name, so that teammates know when I am at lunch.",modification,later,customer,0,4,8,low
+fr,"As a documentation reader, I want a one-click 'Copy Code' button on code blocks with a 'Copied!' toast, so that copying snippets is easier.",modification,soon,developer knowledge,0,2,2,low
+fr,"As a user, I want collapsible sidebar sections whose open/closed state is remembered across reloads, so that navigation stays compact.",modification,later,customer,2,6,11,low
+fr,"As an admin, I want custom footer copyright text configurable from the branding settings page, so that white-label portals match company name.",modification,soon,customer,0,2,2,low
+nfr,"As a developer, I want Prettier formatting rules enforced in pre-commit hooks, so that code indentation remains uniform.",modification,soon,customer,0,2,2,low
+fr,"As a user, I want recently viewed items listed in a dropdown under the search bar, so that I can reopen recent pages.",modification,soon,developer knowledge,0,2,2,low
+fr,"As a blog reader, I want social media share buttons for LinkedIn and X at the bottom of public release posts, so that I can share updates.",modification,soon,customer,1,2,2,low
+fr,"As a user, I want pagination page-size selectors (10, 25, 50 rows) on secondary lookup tables, so that I can view more rows per page.",modification,later,customer,0,4,8,low
+fr,"As a team member, I want celebratory confetti animation when all sprint tasks move to Done, so that team morale is boosted.",modification,later,developer knowledge,0,4,8,low
+fr,"As a user, I want compact vs comfortable table row density options in view settings, so that I can fit more data on small laptop screens.",modification,soon,customer,2,2,2,low
+nfr,"As a UI engineer, I want custom scrollbar styling aligned with the brand color palette on Chromium browsers, so that scrollbars blend in.",modification,soon,customer,1,2,2,low
+fr,"As a user, I want print-friendly CSS stylesheets for help center articles, so that printed pages hide navigation menus.",modification,later,customer,0,4,8,low
+fr,"As a user, I want a release version number and build commit hash displayed in the help modal footer, so that support tickets can reference it.",modification,soon,customer,0,2,2,low
+fr,"As a customer, I want optional newsletter opt-in checkboxes during onboarding, so that I can receive product tips.",modification,later,customer,0,4,8,low
+fr,"As a user, I want hover preview cards showing user bio and timezone when hovering over @mentions, so that context is visible inline.",modification,soon,customer,0,2,2,low
+fr,"As a workspace user, I want customizable keyboard navigation shortcuts for archiving notifications, so that power users save time.",modification,soon,customer,1,2,2,low
+fr,"As a portal visitor, I want an interactive FAQ accordion with smooth expand/collapse transitions, so that answers are easy to browse.",modification,later,customer,0,4,8,low
+fr,"As a user, I want custom sound notification tones selectable in profile preferences, so that alerts are distinguishable.",modification,later,customer,0,4,8,low
+nfr,"As a developer, I want storybook documentation stories added for secondary badge components, so that UI kit examples are complete.",modification,later,customer,1,5,10,low
+fr,"As a user, I want breadcrumb navigation links displayed above nested settings subpages, so that hierarchy is clear.",modification,soon,customer,1,2,2,low
+fr,"As a user, I want auto-expanding textarea height when typing long descriptions, so that internal scrollbars do not appear.",modification,soon,customer,1,2,2,low
+fr,"As a dashboard viewer, I want a full-screen presentation mode button that hides top navigation bars, so that charts look clean on projectors.",modification,soon,developer knowledge,0,2,2,low
+fr,"As a user, I want optional weekly productivity streak badges on my profile card, so that consistent usage is gamified.",addition,later,customer,1,6,11,low
+fr,"As a user, I want a quick-filter pill to hide archived projects from the sidebar list, so that old workspaces stay out of sight.",modification,later,customer,3,6,11,low
+fr,"As a user, I want tooltip explanations on secondary chart axes, so that novice users understand metric units.",modification,later,customer,0,4,8,low
+fr,"As a user, I want customizable default landing page selection after login (Dashboard vs Backlog), so that I start on my preferred view.",addition,later,customer,0,5,10,low
+fr,"As a user, I want a feedback emoji widget in the corner of beta features, so that quick sentiment ratings can be submitted.",modification,soon,developer knowledge,0,2,2,low
+fr,"As a user, I want high-contrast border toggle in theme preferences, so that card boundaries stand out on low-contrast monitors.",modification,later,customer,1,5,10,low
